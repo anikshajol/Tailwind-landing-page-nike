@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fon-awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/e4fd83d3e1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Customization -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              textColor: "#3E3E3E",
+              hColor: "#363958",
+              styleColor: "#FA804C",
+              bannerBg: "#FFF9F4",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="dark:bg-slate-800 dark:text-white">
+    <section class="bg-bannerBg pb-12">
+      <nav
+        class="flex flex-col sm:flex sm:flex-row justify-center items-center p-4"
+      >
+        <section class="logo">
+          <img src="./icons/Logo.png" class="sm:w-1/2 max-w-full" alt="" />
+        </section>
+
+        <section>
+          <ul
+            class="flex flex-col sm:flex sm:flex-row text-xl font-bold text-textColor text-center gap-5"
+          >
+            <li>Home</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Contact</li>
+          </ul>
+        </section>
+      </nav>
+      <!-- Header section start -->
+      <header
+        class="container mx-auto flex flex-col sm:flex sm:flex-row justify-evenly sm:justify-evenly mb-36 space-y-5"
+      >
+        <section class="banner-image w-full order-2 sm:order-1">
+          <img
+            src="./images/Group 33092.png"
+            class="sm:w-6/12 max-w-full"
+            alt=""
+          />
+        </section>
+
+        <section
+          class="banner-text order-1 sm:order-2 max-w-full p-9 space-y-5"
+        >
+          <h1 class="uppercase text-hColor text-4xl font-bold sm:text-6xl">
+            <span class="text-styleColor">nike react</span> infinity run 2
+          </h1>
+          <p class="text-textColor">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button class="btn btn-primary bg-blue-900" type="button">
+            <i class="fa-solid fa-cart-arrow-down pr-2"></i> Buy Now
+          </button>
+        </section>
+      </header>
+    </section>
+    <!-- Header section end -->
+
+    <!-- Main section start -->
+    <main class="container mx-auto mt-8">
+      <!-- Casual shoes section start-->
+      <section class="casual-shoes">
+        <h2 class="text-4xl text-center sm:text-left uppercase sm:ml-8">
+          Casual Shoes
+        </h2>
+        <section
+          class="card-section grid sm:grid-cols-3 grid-cols-1 justify-center ml-8"
+        >
+          <!-- Card 1 start -->
+          <div class="card w-80 my-10 shadow-lg p-3 rounded-md space-y-4">
+            <div class="card__img bg-slate-300 rounded-lg">
+              <img
+                src="./images/pngegg 1.png"
+                class="max-w-full w-1/2 mx-auto"
+                alt=""
+              />
+            </div>
+
+            <h3 class="text-4xl font-bold">Nike Shoe</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              voluptates!
+            </p>
+
+            <div class="card-footer flex justify-between items-center py-5">
+              <div class="price">
+                <h4 class="text-styleColor text-2xl font-bold">$234</h4>
+              </div>
+              <div class="button">
+                <button class="btn btn-primary bg-blue-900" type="button">
+                  <i class="fa-solid fa-cart-arrow-down pr-2"></i> Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 1 end -->
+
+          <!-- Card 2 start -->
+          <div class="card w-80 my-10 shadow-lg p-3 rounded-md space-y-4">
+            <div class="card__img bg-slate-300 rounded-lg">
+              <img
+                src="./images/image 5.png"
+                class="max-w-full w-1/2 mx-auto"
+                alt=""
+              />
+            </div>
+
+            <h3 class="text-4xl font-bold">Nike Shoe</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              voluptates!
+            </p>
+
+            <div class="card-footer flex justify-between items-center py-5">
+              <div class="price">
+                <h4 class="text-styleColor text-2xl font-bold">$234</h4>
+              </div>
+              <div class="button">
+                <button class="btn btn-primary bg-blue-900" type="button">
+                  <i class="fa-solid fa-cart-arrow-down pr-2"></i> Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 end -->
+
+          <!-- Card 3 start -->
+          <div class="card w-80 my-10 shadow-lg p-3 rounded-md space-y-4">
+            <div class="card__img bg-slate-300 rounded-lg">
+              <img
+                src="./images/Daco_1703273 1.png"
+                class="max-w-full w-1/2 mx-auto"
+                alt=""
+              />
+            </div>
+
+            <h3 class="text-4xl font-bold">Nike Shoe</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              voluptates!
+            </p>
+
+            <div class="card-footer flex justify-between items-center py-5">
+              <div class="price">
+                <h4 class="text-styleColor text-2xl font-bold">$234</h4>
+              </div>
+              <div class="button">
+                <button class="btn btn-primary bg-blue-900" type="button">
+                  <i class="fa-solid fa-cart-arrow-down pr-2"></i> Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 end -->
+        </section>
+
+        <!-- Casual shoes section end -->
+
+        <!-- formal shoes section start-->
+        <h2 class="text-4xl sm:text-left uppercase sm:ml-8">Casual Shoes</h2>
+        <section
+          class="card-section grid sm:grid-cols-3 grid-cols-1 justify-center ml-8"
+        >
+          <!-- Card 1 start -->
+          <div class="card w-80 my-10 shadow-lg p-3 rounded-md space-y-4">
+            <div class="card__img bg-slate-300 rounded-lg">
+              <img
+                src="./images/pngegg 1.png"
+                class="max-w-full w-1/2 mx-auto"
+                alt=""
+              />
+            </div>
+
+            <h3 class="text-4xl font-bold">Nike Shoe</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              voluptates!
+            </p>
+
+            <div class="card-footer flex justify-between items-center py-5">
+              <div class="price">
+                <h4 class="text-styleColor text-2xl font-bold">$234</h4>
+              </div>
+              <div class="button">
+                <button class="btn btn-primary bg-blue-900" type="button">
+                  <i class="fa-solid fa-cart-arrow-down pr-2"></i> Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 1 end -->
+
+          <!-- Card 2 start -->
+          <div class="card w-80 my-10 shadow-lg p-3 rounded-md space-y-4">
+            <div class="card__img bg-slate-300 rounded-lg">
+              <img
+                src="./images/image 5.png"
+                class="max-w-full w-1/2 mx-auto"
+                alt=""
+              />
+            </div>
+
+            <h3 class="text-4xl font-bold">Nike Shoe</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              voluptates!
+            </p>
+
+            <div class="card-footer flex justify-between items-center py-5">
+              <div class="price">
+                <h4 class="text-styleColor text-2xl font-bold">$234</h4>
+              </div>
+              <div class="button">
+                <button class="btn btn-primary bg-blue-900" type="button">
+                  <i class="fa-solid fa-cart-arrow-down pr-2"></i> Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 end -->
+
+          <!-- Card 3 start -->
+          <div class="card w-80 my-10 shadow-lg p-3 rounded-md space-y-4">
+            <div class="card__img bg-slate-300 rounded-lg">
+              <img
+                src="./images/Daco_1703273 1.png"
+                class="max-w-full w-1/2 mx-auto"
+                alt=""
+              />
+            </div>
+
+            <h3 class="text-4xl font-bold">Nike Shoe</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              voluptates!
+            </p>
+
+            <div class="card-footer flex justify-between items-center py-5">
+              <div class="price">
+                <h4 class="text-styleColor text-2xl font-bold">$234</h4>
+              </div>
+              <div class="button">
+                <button class="btn btn-primary bg-blue-900" type="button">
+                  <i class="fa-solid fa-cart-arrow-down pr-2"></i> Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 end -->
+
+          <!-- Casual shoes section end -->
+
+          <!-- formal shoes section start-->
+
+          <!-- formal shoes section  end-->
+        </section>
+        <!-- formal shoes section  end-->
+      </section>
+
+      <!-- footer banner -->
+
+      <section
+        class="grid justify-center items-center sm:grid-cols-2 sm:justify-center sm:items-center container m-auto gap-5 px-8 sm:px-10"
+      >
+        <!-- col-1 -->
+        <div class="h-40 order-2">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="flex items-center">
+              <div class="icon">
+                <img src="./icons/image 12.png" class="max-w-full" alt="" />
+              </div>
+
+              <div class="card-body">
+                <h2 class="card-title">Find the Perfect Fit</h2>
+                <p>
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-2 -->
+        <div class="sm:row-span-3 order-1">
+          <img src="./icons/XMLID 1.png" class="max-w-full" alt="" />
+        </div>
+
+        <!-- col-3 -->
+        <div class="h-40 order-3">
+          <div class="h-40">
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <div class="flex items-center">
+                <div class="icon">
+                  <img src="./icons/image 12.png" class="max-w-full" alt="" />
+                </div>
+
+                <div class="card-body">
+                  <h2 class="card-title">Find the Perfect Fit</h2>
+                  <p>
+                    Everybody is different, which is why we offer styles for
+                    every body.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- col-4  -->
+
+        <div class="h-40 order-4">
+          <div class="h-40">
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <div class="flex items-center">
+                <div class="icon">
+                  <img src="./icons/image 12.png" class="max-w-full" alt="" />
+                </div>
+
+                <div class="card-body">
+                  <h2 class="card-title">Find the Perfect Fit</h2>
+                  <p>
+                    Everybody is different, which is why we offer styles for
+                    every body.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main section end -->
+  </body>
+</html>
